@@ -3,7 +3,7 @@
  * @Author: Ping Gan
  * @Date: 2020-08-08 17:28:54
  * @LastEditors: Ping Gan
- * @LastEditTime: 2020-08-09 18:18:27
+ * @LastEditTime: 2020-08-09 18:30:52
  */
 import React, { Fragment, useState } from 'react';
 import './App.css';
@@ -60,7 +60,13 @@ function App() {
     <Router>
       <div className="App">
         <Header></Header>
-        <TodoForm addItem={addItem}></TodoForm>
+        <Route exact path='/' render={props => (
+          <Fragment>
+            <TodoForm
+              addItem={addItem}
+            ></TodoForm>
+          </Fragment>
+        )} />
         <Route exact path='/about' component={About} />
         <Route exact path='/' render={props => (
           <Fragment>
