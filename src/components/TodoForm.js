@@ -3,7 +3,7 @@
  * @Author: Ping Gan
  * @Date: 2020-08-09 17:27:06
  * @LastEditors: Ping Gan
- * @LastEditTime: 2020-08-09 18:17:28
+ * @LastEditTime: 2020-08-09 19:17:44
  */
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
@@ -33,7 +33,7 @@ const TodoForm = ({ addItem }) => {
                 placeholder='新的待办事项'
                 type='text'>
             </input>
-            <input style={submitStyle} type='submit' value='添加'></input>
+            <input style={submitStyle} type='submit' value='添加'/>
         </form>
     )
 }
